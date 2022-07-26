@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your valuable feedback</p>
+    <form id="survey-form" action="https://survey-form.freecodecamp.org">
+      <fieldset>
+        <label id="name-label"
+          >Name
+          <input
+            class="user"
+            type="text"
+            placeholder="Enter your name"
+            required
+            id="name"
+        /></label>
+        <label id="email-label"
+          >Email
+          <input
+            class="user"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label id="number-label"
+          >Age<input
+            class="user"
+            placeholder="Enter your age"
+            type="number"
+            id="number"
+            min="18"
+            max="100"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Select an option from below
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        Would you recommend freeCodeCamp to a friend?
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            value="definitely"
+            name="radio-select"
+          />
+          Definitely</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="radio"
+            value="maybe"
+            name="radio-select"
+          />
+          Maybe</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="radio"
+            value="notsure"
+            name="radio-select"
+          />
+          Not Sure</label
+        >
+      </fieldset>
+      <fieldset>
+        What would you like to see improved? (Check all that apply)
+        <label
+          ><input class="inline" type="checkbox" value="frontend" required />
+          Front-end Projects</label
+        >
+        <label
+          ><input class="inline" type="checkbox" value="backend" required />
+          Back-end Projects</label
+        >
+        <label
+          ><input class="inline" type="checkbox" value="videos" required />
+          Videos</label
+        >
+        <label
+          ><input class="inline" type="checkbox" value="challenges" required />
+          Challenges</label
+        >
+        <label
+          ><input class="inline" type="checkbox" value="courses" required />
+          Additional Courses</label
+        >
+      </fieldset>
+      <label>
+        Additional Comments
+        <textarea
+          name="comments"
+          id=""
+          cols="30"
+          rows="3"
+          placeholder="Provide Additional Comments..."
+        ></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
